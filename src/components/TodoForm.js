@@ -10,7 +10,6 @@ class TodoForm extends React.Component {
     super();
     this.state = {
       task: "",
-      id: Date.now(),
       completed: false,
     };
   }

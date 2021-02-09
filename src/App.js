@@ -1,4 +1,5 @@
 import React from "react";
+// import "../Todo.css";
 
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
@@ -43,10 +44,10 @@ class App extends React.Component {
     });
   };
 
-  addItem = ({ task, id, completed }) => {
+  addItem = ({ task, completed }) => {
     const newTodo = {
       task: task,
-      id: id,
+      id: Date.now(),
       completed: completed,
     };
 

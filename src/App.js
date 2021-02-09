@@ -1,5 +1,5 @@
 import React from "react";
-// import "../Todo.css";
+import "./components/Todo.css";
 
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
@@ -71,7 +71,9 @@ class App extends React.Component {
           <h2>Welcome to your Todo App!</h2>
           <TodoForm addItem={this.addItem} />
         </div>
-        <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} />
+        <div className="task-input">
+          <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} />
+        </div>
         <div className="erase-btn">
           <button onClick={() => this.deleteItem()}>
             Erase Completed Tasks

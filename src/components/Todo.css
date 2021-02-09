@@ -1,4 +1,20 @@
 /* CSS for todo app */
+.App {
+  background-color: lightsteelblue;
+  height: 50vh;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: solid 2px navy;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header h2 {
+  /* border: solid 2px black; */
+  display: flex;
+  justify-content: center;
+}
+
 .item-completed {
   color: red;
   text-decoration-line: line-through;

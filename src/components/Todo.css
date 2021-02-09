@@ -1,0 +1,5 @@
+/* CSS for todo app */
+.item-completed {
+  color: red;
+  text-decoration-line: line-through;
+}
